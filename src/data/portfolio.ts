@@ -10,6 +10,7 @@ import {
 } from 'react-icons/si';
 import { TbBrandTailwind } from 'react-icons/tb';
 import { BiCodeCurly } from 'react-icons/bi';
+import { FaCloud } from 'react-icons/fa6';
 
 // Navigation Links
 export const navLinks = [
@@ -28,25 +29,25 @@ export const navLinks = [
 export const socialLinks = [
   {
     name: 'LinkedIn',
-    href: 'https://linkedin.com/in/mritheesh',
+    href: 'https://www.linkedin.com/in/RitheeshMuplam',
     icon: FaLinkedin,
     color: '#0A66C2',
   },
   {
     name: 'GitHub',
-    href: 'https://github.com/mritheesh',
+    href: 'https://github.com/MuplamRitheesh',
     icon: FaGithub,
     color: '#181717',
   },
   {
     name: 'LeetCode',
-    href: 'https://leetcode.com/mritheesh',
+    href: 'https://leetcode.com/u/Ritheesh_M/',
     icon: FaCode,
     color: '#FFA116',
   },
   {
     name: 'HackerRank',
-    href: 'https://hackerrank.com/mritheesh',
+    href: 'https://www.hackerrank.com/profile/rithishreddy3',
     icon: FaHackerrank,
     color: '#00EA64',
   },
@@ -56,13 +57,13 @@ export const socialLinks = [
 export const heroData = {
   name: 'M Ritheesh',
   titles: [
-    'Full Stack Developer',
-    'Java Developer',
-    'MERN Stack Developer',
-    'Spring Boot Developer',
+    'Java Full Stack Developer',
+    'Aspiring Software Engineer',
+    'Problem Solver',
+    'AI Enthusiast',
   ],
-  resumeUrl: '/resume.pdf',
-  profileImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
+  resumeUrl: 'https://drive.google.com/file/d/1VI3F8P83SHY_hfntv0SolDTyirvTHPr3/view?usp=drivesdk',
+  profileImage: '/src/images/Ritheesh.jpeg',
 };
 
 // About Section Data
@@ -74,7 +75,7 @@ export const aboutData = {
     My interests span across AI/ML, cloud computing, and creating seamless user experiences.`,
   highlights: [
     { label: 'CGPA', value: '9.53' },
-    { label: 'Problems Solved', value: '250+' },
+    { label: 'Problems Solved', value: '350+' },
     { label: 'Projects', value: '10+' },
     { label: 'Certifications', value: '5+' },
   ],
@@ -188,13 +189,13 @@ export const projectsData = [
 export const experienceData = [
   {
     id: 1,
-    title: 'Full Stack Developer Intern',
-    company: 'Coming Soon',
-    location: 'Remote',
-    duration: 'Future Opportunity',
-    description: 'Looking for exciting internship opportunities in full-stack development.',
-    technologies: ['React.js', 'Spring Boot', 'MySQL', 'REST APIs'],
-    type: 'future',
+    title: 'Software Engineer Intern',
+    company: 'Progmaster Private Limited',
+    location: 'HYBRID',
+    duration: 'JAN 2026 - APRIL 2026',
+    description: 'Developed and deployed scalable full stack applications.',
+    technologies: ['React.js', 'Node.js', 'MySQL', 'REST APIs'],
+    type: 'past',
   },
 ];
 
@@ -204,9 +205,9 @@ export const certificationsData = [
     id: 1,
     title: 'Oracle Cloud Infrastructure Generative AI Professional',
     issuer: 'Oracle',
-    date: '2024',
-    credentialId: 'OCI-GEN-AI-2024',
-    verifyUrl: 'https://oracle.com/certification',
+    date: '2025',
+    credentialId: '323371331OCI25GAIOCP',
+    verifyUrl: 'https://brm-certview.oracle.com/ords/certview/ecertificate?ssn=OC7529582&trackId=OCI25GAIOCP&key=60035b1d0dcd0cf99810d1175bb7d06bdd7e96f2',
     icon: FaCertificate,
     color: 'from-orange-500 to-red-500',
   },
@@ -214,9 +215,9 @@ export const certificationsData = [
     id: 2,
     title: 'SQL Certification',
     issuer: 'HackerRank',
-    date: '2024',
+    date: '2025',
     credentialId: 'HR-SQL-2024',
-    verifyUrl: 'https://hackerrank.com/certification',
+    verifyUrl: 'https://www.hackerrank.com/certificates/iframe/51b585ddd08b',
     icon: FaDatabase,
     color: 'from-green-500 to-emerald-500',
   },
@@ -224,9 +225,9 @@ export const certificationsData = [
     id: 3,
     title: 'Java Certification',
     issuer: 'HackerRank',
-    date: '2024',
+    date: '2025',
     credentialId: 'HR-JAVA-2024',
-    verifyUrl: 'https://hackerrank.com/certification',
+    verifyUrl: 'https://www.hackerrank.com/certificates/iframe/876a5048876d',
     icon: FaJava,
     color: 'from-blue-500 to-indigo-500',
   },
@@ -234,9 +235,9 @@ export const certificationsData = [
     id: 4,
     title: 'Software Engineer Intern Certification',
     issuer: 'HackerRank',
-    date: '2024',
+    date: '2026',
     credentialId: 'HR-SEI-2024',
-    verifyUrl: 'https://hackerrank.com/certification',
+    verifyUrl: 'https://www.hackerrank.com/certificates/6ecfb69939d5',
     icon: FaBriefcase,
     color: 'from-purple-500 to-pink-500',
   },
@@ -244,10 +245,20 @@ export const certificationsData = [
     id: 5,
     title: 'MERN Stack Development',
     issuer: 'SmartBridge',
-    date: '2024',
-    credentialId: 'SB-MERN-2024',
-    verifyUrl: 'https://smartbridge.in/certification',
+    date: '2025',
+    credentialId: 'EXT-APSCHE_FSD-63324',
+    verifyUrl: 'src\images\Certificate - SmartInternz.pdf',
     icon: FaReact,
+    color: 'from-teal-500 to-cyan-500',
+  },
+  {
+    id: 6,
+    title: 'GOOGLE CLOUD GENERATIVE AI',
+    issuer: 'SmartBridge',
+    date: '2026',
+    credentialId: 'EXT-APSCHE_GENAI-69578',
+    verifyUrl: 'src\images\Certificate - SmartInternz (1).pdf',
+    icon: FaCloud,
     color: 'from-teal-500 to-cyan-500',
   },
 ];
@@ -268,7 +279,7 @@ export const achievementsData = [
     description: 'Won first place in the technical quiz competition showcasing expertise in computer science fundamentals.',
     icon: FaStar,
     color: 'from-blue-500 to-cyan-500',
-    date: '2024',
+    date: '2025',
   },
   {
     id: 3,
@@ -276,7 +287,7 @@ export const achievementsData = [
     description: 'Solved over 250 problems on LeetCode and GeeksforGeeks, demonstrating problem-solving skills.',
     icon: FaCode,
     color: 'from-green-500 to-emerald-500',
-    date: '2024',
+    date: '2026',
   },
   {
     id: 4,
@@ -284,7 +295,7 @@ export const achievementsData = [
     description: 'Achieved 5-star rating in Java on HackerRank, showcasing strong programming expertise.',
     icon: FaStar,
     color: 'from-purple-500 to-pink-500',
-    date: '2024',
+    date: '2025',
   },
 ];
 
@@ -295,11 +306,11 @@ export const profilesData = [
     platform: 'LeetCode',
     username: 'mritheesh',
     stats: {
-      problemsSolved: '150+',
-      ranking: 'Top 10%',
+      problemsSolved: '100+',
+      ranking: 'Top 75%',
       streak: '30 Days',
     },
-    url: 'https://leetcode.com/mritheesh',
+    url: 'https://leetcode.com/u/Ritheesh_M/',
     icon: FaCode,
     color: 'from-yellow-500 to-orange-500',
     bgColor: '#FFA116',
@@ -307,13 +318,13 @@ export const profilesData = [
   {
     id: 2,
     platform: 'GeeksforGeeks',
-    username: 'mritheesh',
+    username: 'M Ritheesh',
     stats: {
-      problemsSolved: '100+',
-      ranking: 'Institutional Rank: 5',
-      streak: 'Regular',
+      problemsSolved: '300+',
+      ranking: 'Institutional Rank: 2',
+      streak: '55 Days',
     },
-    url: 'https://geeksforgeeks.org/user/mritheesh',
+    url: 'https://www.geeksforgeeks.org/user/ritheesh12/',
     icon: FaCode,
     color: 'from-green-500 to-teal-500',
     bgColor: '#2F8D46',
@@ -321,13 +332,13 @@ export const profilesData = [
   {
     id: 3,
     platform: 'HackerRank',
-    username: 'mritheesh',
+    username: 'Ritheesh M',
     stats: {
       problemsSolved: '50+',
       badges: '5-Star Java',
       certifications: '3+',
     },
-    url: 'https://hackerrank.com/mritheesh',
+    url: 'https://www.hackerrank.com/profile/rithishreddy3',
     icon: FaHackerrank,
     color: 'from-green-400 to-emerald-500',
     bgColor: '#00EA64',
@@ -335,13 +346,13 @@ export const profilesData = [
   {
     id: 4,
     platform: 'GitHub',
-    username: 'mritheesh',
+    username: 'muplamritheesh',
     stats: {
       repositories: '15+',
       contributions: 'Active',
-      stars: '10+',
+      
     },
-    url: 'https://github.com/mritheesh',
+    url: 'https://github.com/MuplamRitheesh',
     icon: FaGithub,
     color: 'from-gray-600 to-gray-800',
     bgColor: '#181717',
@@ -350,8 +361,8 @@ export const profilesData = [
 
 // Contact Data
 export const contactData = {
-  email: 'ritheesh@example.com',
-  phone: '+91 XXXXXXXXXX',
+  email: 'rithishreddy3@email.com',
+  phone: '+91 7022318141',
   location: 'India',
-  availability: 'Available for Internships',
+  availability: 'Available for Full-Time Opportunities',
 };

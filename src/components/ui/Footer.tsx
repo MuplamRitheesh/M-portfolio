@@ -105,8 +105,8 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <p className="text-gray-400">
                 <span className="text-primary-400">Email:</span>{' '}
-                <a href="mailto:ritheesh@example.com" className="hover:text-white transition-colors">
-                  ritheesh@example.com
+                <a href="mailto:rithishreddy3@gmail.com" className="hover:text-white transition-colors">
+                  rithishreddy3@gmail.com
                 </a>
               </p>
               <p className="text-gray-400">
