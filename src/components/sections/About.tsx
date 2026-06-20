@@ -111,7 +111,7 @@ const About: React.FC = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 via-blue-500 to-violet-500 rounded-2xl blur-lg opacity-50" />
                   <div className="relative p-1 bg-gradient-to-br from-cyan-500 via-blue-500 to-violet-500 rounded-2xl">
                     <img
-                      src="profile.jpeg"
+                      src="images/profile.jpeg"
                       alt="M Ritheesh"
                       className="w-full aspect-square object-cover object-center rounded-xl"
                     />

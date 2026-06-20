@@ -63,7 +63,7 @@ export const heroData = {
     'AI Enthusiast',
   ],
   resumeUrl: 'https://drive.google.com/file/d/1VI3F8P83SHY_hfntv0SolDTyirvTHPr3/view?usp=drivesdk',
-  profileImage: '/profile.jpeg',
+  profileImage: 'images/profile.jpeg',
 };
 
 // About Section Data
