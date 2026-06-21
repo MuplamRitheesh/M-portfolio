@@ -135,53 +135,72 @@ const Contact: React.FC = () => {
               </p>
             </div>
 
-            {/* Contact Details */}
-            <div className="space-y-4">
-              <motion.div
-                className="flex items-center gap-4 bg-white/10 dark:bg-white/5 p-4 rounded-xl
-                          border border-white/20 hover:border-primary-500/50 transition-colors"
-                whileHover={{ x: 5 }}
-              >
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-primary-500 to-accent-500
-                              flex items-center justify-center">
-                  <FaEnvelope className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Email</p>
-                  <p className="text-gray-900 dark:text-white font-medium">{contactData.email}</p>
-                </div>
-              </motion.div>
+           {/* Contact Details */}
+<div className="space-y-4">
 
-              <motion.div
-                className="flex items-center gap-4 bg-white/10 dark:bg-white/5 p-4 rounded-xl
-                          border border-white/20 hover:border-primary-500/50 transition-colors"
-                whileHover={{ x: 5 }}
-              >
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-primary-500 to-accent-500
-                              flex items-center justify-center">
-                  <FaMapMarkerAlt className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Location</p>
-                  <p className="text-gray-900 dark:text-white font-medium">{contactData.location}</p>
-                </div>
-              </motion.div>
+  {/* Email */}
+  <motion.a
+    href={`mailto:${contactData.email}`}
+    className="flex items-center gap-4 bg-white/10 dark:bg-white/5 p-4 rounded-xl
+              border border-white/20 hover:border-primary-500/50 transition-colors"
+    whileHover={{ x: 5 }}
+  >
+    <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-primary-500 to-accent-500
+                  flex items-center justify-center">
+      <FaEnvelope className="w-5 h-5 text-white" />
+    </div>
+    <div>
+      <p className="text-sm text-gray-600 dark:text-gray-400">Email</p>
+      <p className="text-gray-900 dark:text-white font-medium">
+        {contactData.email}
+      </p>
+    </div>
+  </motion.a>
 
-              <motion.div
-                className="flex items-start gap-4 bg-white/10 dark:bg-white/5 p-4 rounded-xl
-                          border border-white/20 hover:border-primary-500/50 transition-colors"
-                whileHover={{ x: 5 }}
-              >
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-primary-500 to-accent-500
-                              flex items-center justify-center">
-                  <FaPhone className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Phone</p>
-                  <p className="text-gray-900 dark:text-white font-medium">{contactData.phone}</p>
-                </div>
-              </motion.div>
-            </div>
+  {/* Location */}
+  <motion.a
+  href={contactData.locationUrl}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-4 bg-white/10 dark:bg-white/5 p-4 rounded-xl
+             border border-white/20 hover:border-primary-500/50 transition-colors"
+  whileHover={{ x: 5 }}
+>
+  <div
+    className="w-12 h-12 rounded-lg bg-gradient-to-r from-primary-500 to-accent-500
+               flex items-center justify-center"
+  >
+    <FaMapMarkerAlt className="w-5 h-5 text-white" />
+  </div>
+
+  <div>
+    <p className="text-sm text-gray-600 dark:text-gray-400">Location</p>
+    <p className="text-gray-900 dark:text-white font-medium">
+      {contactData.location}
+    </p>
+  </div>
+</motion.a>
+
+  {/* Phone */}
+  <motion.a
+    href={`tel:${contactData.phone.replace(/\s+/g, '')}`}
+    className="flex items-center gap-4 bg-white/10 dark:bg-white/5 p-4 rounded-xl
+              border border-white/20 hover:border-primary-500/50 transition-colors"
+    whileHover={{ x: 5 }}
+  >
+    <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-primary-500 to-accent-500
+                  flex items-center justify-center">
+      <FaPhone className="w-5 h-5 text-white" />
+    </div>
+    <div>
+      <p className="text-sm text-gray-600 dark:text-gray-400">Phone</p>
+      <p className="text-gray-900 dark:text-white font-medium">
+        {contactData.phone}
+      </p>
+    </div>
+  </motion.a>
+
+</div>
 
             {/* Availability Badge */}
             <motion.div

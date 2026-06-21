@@ -217,7 +217,7 @@ export const projectsData = [
   {
   id: 5,
   title: 'Travel Itinerary Generator',
-  category: 'web',
+  category: 'ai',
   description: 'AI-powered travel planning platform that generates personalized itineraries based on destination, budget, duration, and user preferences.',
   longDescription: 'Smart travel planning application designed to simplify trip organization by creating customized travel schedules, recommending attractions, and optimizing daily activities.',
   image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop',
@@ -403,25 +403,26 @@ export const profilesData = [
     bgColor: '#00EA64',
   },
   {
-    id: 4,
-    platform: 'GitHub',
-    username: 'muplamritheesh',
-    stats: {
-      repositories: '15+',
-      contributions: 'Active',
-      
-    },
-    url: 'https://github.com/MuplamRitheesh',
-    icon: FaGithub,
-    color: 'from-gray-600 to-gray-800',
-    bgColor: '#181717',
+  id: 4,
+  platform: 'GitHub',
+  username: 'muplamritheesh',
+  stats: {
+    repositories: '15+',
+    contributions: 'Active',
+    projects: '5+',
   },
+  url: 'https://github.com/MuplamRitheesh',
+  icon: FaGithub,
+  color: 'from-gray-600 to-gray-800',
+  bgColor: '#181717',
+},
 ];
 
 // Contact Data
 export const contactData = {
   email: 'rithishreddy3@email.com',
   phone: '+91 7022318141',
-  location: 'India',
+  location: 'Chavarambakam,Andhra Pradesh, India',
+  locationUrl: 'https://www.google.com/maps/place/Ritheesh+home/@13.363243,79.6766533,17z/data=!3m1!4b1!4m6!3m5!1s0x3a4d5f006e9b161b:0x36a93f073ac0ae87!8m2!3d13.363243!4d79.6766533!16s%2Fg%2F11lys94zgk?entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D',
   availability: 'Available for Full-Time Opportunities',
 };
