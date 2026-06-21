@@ -147,7 +147,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Scroll to Top Button */}
-        <motion.button
+        {/* <motion.button
           onClick={scrollToTop}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 translate-y-16
                    w-12 h-12 rounded-full bg-gradient-to-r from-primary-500 to-accent-500
@@ -158,7 +158,7 @@ const Footer: React.FC = () => {
           aria-label="Scroll to top"
         >
           <FaArrowUp className="w-5 h-5" />
-        </motion.button>
+        </motion.button> */}
       </div>
     </footer>
   );

@@ -250,7 +250,7 @@ const Projects: React.FC = () => {
           transition={{ delay: 0.5 }}
         >
           <motion.a
-            href="https://github.com/mritheesh"
+            href="https://github.com/muplamritheesh"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 dark:bg-white/5

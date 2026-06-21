@@ -23,10 +23,10 @@ const About: React.FC = () => {
   };
 
   const stats = [
-    { icon: Trophy, value: 250, suffix: '+', label: 'Problems Solved', color: 'from-amber-500 to-orange-500' },
-    { icon: Code2, value: 10, suffix: '+', label: 'Projects Built', color: 'from-cyan-500 to-blue-500' },
+    { icon: Trophy, value: 350, suffix: '+', label: 'Problems Solved', color: 'from-amber-500 to-orange-500' },
+    { icon: Code2, value: 7, suffix: '+', label: 'Projects Built', color: 'from-cyan-500 to-blue-500' },
     { icon: Award, value: 5, suffix: '+', label: 'Certifications', color: 'from-violet-500 to-purple-500' },
-    { icon: GraduationCap, value: '9.53', suffix: '', label: 'CGPA', color: 'from-emerald-500 to-teal-500' },
+    { icon: GraduationCap, value: 9, suffix:'.53', label: 'CGPA', color: 'from-emerald-500 to-teal-500' },
   ];
 
   const highlights = [
@@ -37,7 +37,7 @@ const About: React.FC = () => {
   ];
 
   const education = [
-    { degree: 'B.Tech Computer Science', institution: 'Pursuing Excellence', year: '2022 - 2026', gpa: '9.53 CGPA' },
+    { degree: 'B.Tech Computer Science', institution: 'SISTK', year: '2022 - 2026', gpa: '9.53 CGPA' },
   ];
 
   return (

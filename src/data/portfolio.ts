@@ -10,7 +10,7 @@ import {
 } from 'react-icons/si';
 import { TbBrandTailwind } from 'react-icons/tb';
 import { BiCodeCurly } from 'react-icons/bi';
-import { FaCloud } from 'react-icons/fa6';
+import { FaCloud, FaMedal } from 'react-icons/fa6';
 
 // Navigation Links
 export const navLinks = [
@@ -114,7 +114,7 @@ export const skillsData = {
   ],
   databases: [
     { name: 'MySQL', icon: SiMysql, level: 90 },
-    { name: 'MongoDB', icon: SiMongodb, level: 85 },
+    { name: 'MongoDB', icon: SiMongodb, level: 55 },
   ],
   tools: [
     { name: 'Git', icon: FaGitAlt, level: 92 },
@@ -132,7 +132,7 @@ export const projectsData = [
     category: 'fullstack',
     description: 'AI-powered recruitment platform revolutionizing the hiring process with intelligent matching algorithms and automated candidate screening.',
     longDescription: 'A comprehensive recruitment platform leveraging AI to streamline hiring workflows. Features intelligent resume parsing, automated candidate ranking, and seamless interview scheduling.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop',
     technologies: ['React.js', 'Spring Boot', 'MySQL', 'JWT', 'Spring Security', 'REST APIs'],
     features: [
       'Role-based authentication with JWT',
@@ -179,10 +179,69 @@ export const projectsData = [
       'High accuracy classification',
       'REST API integration',
     ],
-    githubUrl: 'https://github.com/mritheesh/fake-news-detection',
+    githubUrl: 'https://github.com/MuplamRitheesh/Fake-News-Detection',
     liveUrl: '',
     featured: true,
   },
+  {
+  id: 4,
+  title: 'Order On The Go',
+  category: 'fullstack',
+  description: 'Full-stack food ordering platform enabling users to browse menus, place orders, and track deliveries through a seamless and responsive interface.',
+  longDescription: 'Modern MERN-based food ordering application designed to provide a smooth online ordering experience with secure authentication, dynamic menu management, and real-time order processing.',
+  image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop',
+  technologies: [
+    'React.js',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+    'JavaScript',
+    'HTML',
+    'CSS',
+    'Tailwind CSS'
+  ],
+  features: [
+    'User authentication and authorization',
+    'Interactive food menu and search',
+    'Shopping cart management',
+    'Online order placement',
+    'Order tracking and status updates',
+    'Responsive mobile-friendly design',
+    'Admin dashboard for menu management',
+    'Secure backend API integration'
+  ],
+  githubUrl: 'https://github.com/MuplamRitheesh/order-on-the-go',
+  liveUrl: '',
+  featured: true,
+  },
+  {
+  id: 5,
+  title: 'Travel Itinerary Generator',
+  category: 'web',
+  description: 'AI-powered travel planning platform that generates personalized itineraries based on destination, budget, duration, and user preferences.',
+  longDescription: 'Smart travel planning application designed to simplify trip organization by creating customized travel schedules, recommending attractions, and optimizing daily activities.',
+  image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop',
+  technologies: [
+    'streamlit',
+    'google-generativeai',
+    'JavaScript',
+    'HTML',
+    'Tailwind CSS'
+  ],
+  features: [
+    'Personalized itinerary generation',
+    'Destination and attraction recommendations',
+    'Budget-based trip planning',
+    'Day-wise activity scheduling',
+    'Trip duration optimization',
+    'Responsive user interface',
+    'User profile and trip history',
+    'REST API integration'
+  ],
+  githubUrl: 'https://github.com/MuplamRitheesh/Travel-Itinerary-Generator',
+  liveUrl: '',
+  featured: true,
+}
 ];
 
 // Experience Data
@@ -283,7 +342,7 @@ export const achievementsData = [
   },
   {
     id: 3,
-    title: '250+ Problems Solved',
+    title: '350+ Problems Solved',
     description: 'Solved over 250 problems on LeetCode and GeeksforGeeks, demonstrating problem-solving skills.',
     icon: FaCode,
     color: 'from-green-500 to-emerald-500',
@@ -291,11 +350,11 @@ export const achievementsData = [
   },
   {
     id: 4,
-    title: '5-Star Java on HackerRank',
-    description: 'Achieved 5-star rating in Java on HackerRank, showcasing strong programming expertise.',
-    icon: FaStar,
+    title: 'Graduation Gold Medalist',
+    description: 'Awarded the Gold Medal for securing 1st rank in academics and demonstrating outstanding academic excellence.',
+    icon: FaMedal,
     color: 'from-purple-500 to-pink-500',
-    date: '2025',
+    date: '2026',
   },
 ];
 
