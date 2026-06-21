@@ -32,9 +32,9 @@ const About: React.FC = () => {
   ];
 
   const highlights = [
-    { icon: Zap, text: 'Full Stack Developer', delay: 0.1 },
+    { icon: Zap, text: 'Web Developer', delay: 0.1 },
     { icon: Target, text: 'Problem Solver', delay: 0.2 },
-    { icon: Sparkles, text: 'MERN Stack', delay: 0.3 },
+    { icon: Sparkles, text: 'JAVA FullStack', delay: 0.3 },
     { icon: Rocket, text: 'AI/ML Integration', delay: 0.4 },
   ];
 
