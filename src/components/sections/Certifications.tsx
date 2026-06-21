@@ -34,17 +34,22 @@ const Certifications: React.FC = () => {
               className="group"
             >
               <motion.div
-                className="h-full bg-white/10 dark:bg-white/5 backdrop-blur-lg rounded-2xl p-6
-                          border border-white/20 hover:border-primary-500/50
-                          transition-all duration-300 relative overflow-hidden"
+                className="relative h-full bg-white/10 dark:bg-white/5 backdrop-blur-lg rounded-2xl p-6
+                           border border-white/20 hover:border-primary-500/50
+                           transition-all duration-300 overflow-hidden"
                 whileHover={{ y: -8, scale: 1.02 }}
               >
                 {/* Gradient Top Border */}
-                <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${cert.color}`} />
+                <div
+                  className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${cert.color}`}
+                />
 
                 {/* Icon */}
-                <div className={`w-14 h-14 rounded-xl bg-gradient-to-r ${cert.color}
-                              flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                <div
+                  className={`w-14 h-14 rounded-xl bg-gradient-to-r ${cert.color}
+                             flex items-center justify-center mb-4
+                             group-hover:scale-110 transition-transform`}
+                >
                   <cert.icon className="w-7 h-7 text-white" />
                 </div>
 
@@ -62,9 +67,12 @@ const Certifications: React.FC = () => {
                     <FaCalendar className="w-4 h-4" />
                     <span>{cert.date}</span>
                   </div>
+
                   <div className="flex items-center gap-2">
                     <FaCertificate className="w-4 h-4" />
-                    <span className="truncate">ID: {cert.credentialId}</span>
+                    <span className="truncate">
+                      ID: {cert.credentialId}
+                    </span>
                   </div>
                 </div>
 
@@ -73,8 +81,9 @@ const Certifications: React.FC = () => {
                   href={cert.verifyUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 inline-flex items-center gap-2 text-sm text-primary-500
-                           hover:text-primary-400 transition-colors"
+                  className="relative z-20 mt-5 inline-flex items-center gap-2
+                             text-sm font-medium text-primary-500
+                             hover:text-primary-400 transition-colors"
                   whileHover={{ x: 5 }}
                 >
                   Verify Credential
@@ -82,8 +91,12 @@ const Certifications: React.FC = () => {
                 </motion.a>
 
                 {/* Hover Glow */}
-                <div className={`absolute -inset-0 bg-gradient-to-r ${cert.color} opacity-0
-                               group-hover:opacity-10 transition-opacity rounded-2xl`} />
+                <div
+                  className={`absolute inset-0 bg-gradient-to-r ${cert.color}
+                             opacity-0 group-hover:opacity-10
+                             transition-opacity duration-300
+                             rounded-2xl pointer-events-none`}
+                />
               </motion.div>
             </motion.div>
           ))}

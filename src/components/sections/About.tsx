@@ -3,6 +3,8 @@ import { motion, useInView, useMotionValue, useTransform } from 'framer-motion';
 import { Code2, Trophy, Award, GraduationCap, Sparkles, Zap, Target, Rocket } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
 import AnimatedCounter from '../ui/AnimatedCounter';
+import { SiBoost, SiCodingame } from 'react-icons/si';
+import { label } from 'framer-motion/client';
 
 const About: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -31,13 +33,13 @@ const About: React.FC = () => {
 
   const highlights = [
     { icon: Zap, text: 'Full Stack Developer', delay: 0.1 },
-    { icon: Target, text: 'Spring Boot Expert', delay: 0.2 },
+    { icon: Target, text: 'Problem Solver', delay: 0.2 },
     { icon: Sparkles, text: 'MERN Stack', delay: 0.3 },
     { icon: Rocket, text: 'AI/ML Integration', delay: 0.4 },
   ];
 
   const education = [
-    { degree: 'B.Tech Computer Science', institution: 'SISTK', year: '2022 - 2026', gpa: '9.53 CGPA' },
+    { degree: 'B.Tech Computer Science', institution: 'SISTK,Puttur', year: '2022 - 2026', gpa: '9.53 CGPA' },
   ];
 
   return (
@@ -271,31 +273,43 @@ const About: React.FC = () => {
             </motion.div>
 
             {/* CTA Buttons */}
-            <motion.div
-              className="flex flex-wrap gap-4 pt-4"
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 1.2 }}
-            >
-              <a
-                href="#contact"
-                className="group relative inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-6 py-3 rounded-full font-semibold shadow-lg shadow-cyan-500/25 hover:shadow-xl hover:shadow-cyan-500/40 transition-all duration-300"
-              >
-                <span>Let's Connect</span>
-                <motion.span
-                  animate={{ x: [0, 5, 0] }}
-                  transition={{ duration: 1.5, repeat: Infinity }}
-                >
-                  →
-                </motion.span>
-              </a>
-              <a
-                href="#projects"
-                className="group inline-flex items-center gap-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white px-6 py-3 rounded-full font-semibold border-2 border-gray-200 dark:border-gray-700 hover:border-cyan-500/50 transition-all duration-300"
-              >
-                <span>View Projects</span>
-              </a>
-            </motion.div>
+<motion.div
+  className="flex flex-row gap-3 pt-4 w-full"
+  initial={{ opacity: 0, y: 20 }}
+  animate={isInView ? { opacity: 1, y: 0 } : {}}
+  transition={{ delay: 1.2 }}
+>
+  <a
+    href="#contact"
+    className="flex-1 group relative inline-flex items-center justify-center gap-2
+               bg-gradient-to-r from-cyan-500 to-blue-500 text-white
+               px-4 py-3 rounded-full font-semibold
+               shadow-lg shadow-cyan-500/25
+               hover:shadow-xl hover:shadow-cyan-500/40
+               transition-all duration-300"
+  >
+    <span>Let's Connect</span>
+    <motion.span
+      animate={{ x: [0, 5, 0] }}
+      transition={{ duration: 1.5, repeat: Infinity }}
+    >
+      →
+    </motion.span>
+  </a>
+
+  <a
+    href="#projects"
+    className="flex-1 group inline-flex items-center justify-center gap-2
+               bg-white dark:bg-gray-800
+               text-gray-900 dark:text-white
+               px-4 py-3 rounded-full font-semibold
+               border-2 border-gray-200 dark:border-gray-700
+               hover:border-cyan-500/50
+               transition-all duration-300"
+  >
+    <span>View Projects</span>
+  </a>
+</motion.div>
           </motion.div>
         </div>
       </div>

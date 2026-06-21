@@ -10,7 +10,7 @@ interface AnimatedCounterProps {
   className?: string;
 }
 
-export const AnimatedCounter: React.FC<AnimatedCounterProps> = ({
+const AnimatedCounter: React.FC<AnimatedCounterProps> = ({
   target,
   suffix = '',
   prefix = '',
@@ -20,40 +20,49 @@ export const AnimatedCounter: React.FC<AnimatedCounterProps> = ({
 }) => {
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const isInView = useInView(ref, { once: true });
   const hasAnimated = useRef(false);
 
   useEffect(() => {
-    if (isInView && !hasAnimated.current) {
-      hasAnimated.current = true;
-      const delayTimeout = setTimeout(() => {
-        let start = 0;
-        const end = target;
-        const incrementTime = (duration * 1000) / end;
-        const timer = setInterval(() => {
-          start += 1;
-          setCount(start);
-          if (start >= end) {
-            clearInterval(timer);
-          }
-        }, incrementTime);
+    if (!isInView || hasAnimated.current) return;
 
-        return () => clearInterval(timer);
-      }, delay * 1000);
+    hasAnimated.current = true;
 
-      return () => clearTimeout(delayTimeout);
-    }
+    const timeout = setTimeout(() => {
+      const startTime = Date.now();
+
+      const animate = () => {
+        const elapsed = Date.now() - startTime;
+        const progress = Math.min(elapsed / (duration * 1000), 1);
+
+        const current = Math.floor(progress * target);
+
+        setCount(current);
+
+        if (progress < 1) {
+          requestAnimationFrame(animate);
+        } else {
+          setCount(target);
+        }
+      };
+
+      requestAnimationFrame(animate);
+    }, delay * 1000);
+
+    return () => clearTimeout(timeout);
   }, [isInView, target, duration, delay]);
 
   return (
     <motion.span
       ref={ref}
       className={className}
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
-      transition={{ duration: 0.5, delay }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.4 }}
     >
-      {prefix}{count}{suffix}
+      {prefix}
+      {count}
+      {suffix}
     </motion.span>
   );
 };
